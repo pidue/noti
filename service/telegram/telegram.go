@@ -31,6 +31,7 @@ type Notification struct {
 	Message string       `json:"text"`
 	Token   string       `json:"-"`
 	Client  *http.Client `json:"-"`
+	Mode    string       `json:"parse_mode"`
 }
 
 // API is the Telegram API endpoint.
